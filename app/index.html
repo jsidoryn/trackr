@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trackr</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/trackr.css">
+  </head>
+  <body>
+    <script>
+      window.TrackrENV = {{ENV}};
+      window.EmberENV = window.TrackrENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/trackr.js"></script>
+    <script>
+      window.Trackr = require('trackr/app')['default'].create(TrackrENV.APP);
+    </script>
+  </body>
+</html>
