@@ -1,0 +1,15 @@
+<h1>Create an entry</h1>
+
+<p>Name: {{input type="text" value=name }}</p>
+
+<div class="box-wrapper">
+  {{#each period in periods}}
+    <div class="box" {{action "selectPeriod" period}}>
+      {{period}}
+    </div>
+  {{/each}}
+</div>
+<br />
+<hr>
+
+<button {{action "submit" }}>Submit</button>

@@ -1,0 +1,11 @@
+<h2>Entries</h2>
+
+<p>{{#link-to "entries.new"}} Add an entry {{/link-to}}</p>
+
+{{outlet}}
+
+<ul>
+  {{#each}}
+    <li>{{#link-to 'entries.entry' this}}{{name}} ({{period}}){{/link-to}} <span {{action "delete" this}}> Delete</span><br /></li>
+  {{/each}}
+</ul>
