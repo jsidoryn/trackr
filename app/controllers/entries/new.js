@@ -32,10 +32,10 @@ export default Ember.ObjectController.extend({
       this.set('period', item);
     },
     selectEnergy: function(item) {
-      this.set('energy', item)
+      this.set('energy', item);
     },
     selectMood: function(item) {
-      this.set('mood', item)
+      this.set('mood', item);
     }
   }
 });
