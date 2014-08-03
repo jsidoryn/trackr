@@ -4,8 +4,11 @@
 
 {{outlet}}
 
+
+<p>Average energy: {{averageEnergy}}</p>
+
 <ul>
   {{#each}}
-    <li>{{#link-to 'entries.entry' this}}{{name}} ({{period}}){{/link-to}} <span {{action "delete" this}}> Delete</span><br /></li>
+    <li>{{#link-to 'entries.entry' this}}{{name}} ({{period}} - {{mood}}){{/link-to}} <span {{action "delete" this}}> Delete</span><br /></li>
   {{/each}}
 </ul>

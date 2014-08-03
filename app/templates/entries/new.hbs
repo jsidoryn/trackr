@@ -2,14 +2,35 @@
 
 <p>Name: {{input type="text" value=name }}</p>
 
+<p>Select an entry</p>
+
 <div class="box-wrapper">
   {{#each period in periods}}
-    <div class="box" {{action "selectPeriod" period}}>
-      {{period}}
-    </div>
+	  {{select-box ranking=period size='box-medium' action='selectPeriod'}}
   {{/each}}
 </div>
-<br />
+
+<br /><br />
 <hr>
+
+<p>Select how you're energy is</p>
+	{{#each energy in rating}}
+		{{select-box ranking=energy size='box-small' action='selectEnergy'}}
+	{{/each}}
+
+<br /><br />
+<hr>
+
+<p>Select how you're mood is</p>
+	{{#each mood in rating}}
+		{{select-box ranking=mood size='box-small' action='selectMood'}}
+	{{/each}}
+
+<br /><br />
+<hr>
+
+<p>Notes: </p>
+
+{{textarea value=notes cols="80" rows="6"}}
 
 <button {{action "submit" }}>Submit</button>
