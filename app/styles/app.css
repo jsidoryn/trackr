@@ -6,7 +6,7 @@ html, body {
 .box-wrapper {
   clear:both;
 }
-.box {
+a.box {
   display: block;
   background-color: #FF6600;
   text-align: center;
@@ -16,24 +16,24 @@ html, body {
   margin-bottom: 10px;
 }
 
-.box-medium {
+a.box-medium {
   width: 80px;
   height: 80px;
   line-height: 80px;
 }
 
-.box-small {
+a.box-small {
   width: 50px;
   height: 50px;
   line-height: 50px;
 }
 
-.box:hover {
+a.box:hover {
   background-color: #000;
   cursor: pointer;
 }
 
-.isSelected {
+a.isSelected {
   background-color:#000 !important;
 }
 

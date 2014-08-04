@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  redirect: function(){
-    this.transitionTo('entries.new');
-  }
+  // redirect: function(){
+  //   this.transitionTo('entries.new');
+  // }
 });

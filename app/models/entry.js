@@ -1,7 +1,7 @@
 import DS from 'ember-data';
 
 var Entry =  DS.Model.extend({
-  name: DS.attr('string'),
+  name: DS.attr('string', {dafaultValue: "Jason's entry"}),
   energy: DS.attr('number'),
   mood: DS.attr('number'),
   focus: DS.attr('number'),
